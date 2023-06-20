@@ -635,9 +635,7 @@ public class Main {
 
                     gestoreNba.mostraGiocatoriSquadra(inputCs);
                     break;
-                case "TS":
-                inSquadra = scanner.nextLine();
-                gestoreNba.titoliTotVinti(inSquadra);
+                
                 case "Q":
                     inserimentoAbilitato = false;
                     break;
