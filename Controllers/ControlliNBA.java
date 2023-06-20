@@ -143,23 +143,5 @@ public class ControlliNBA implements IBallers{
         }
 
     }
-    @Override
-    public void titoliTotVinti(String inSquadra) {
-        int result =0;
-
-
-        for (GiocatoriNBA giocatoriNBA : draft) {
-            if(giocatoriNBA.getSquadra().equals(inSquadra)){
-                squadra.add(giocatoriNBA);
-            }
-        }
-        for(GiocatoriNBA giocNBA : squadra){
-            result += giocNBA.getTitoliNba();
-
-            
-             
-        }
-        System.out.println(result);
-    }
-
+    
 }
