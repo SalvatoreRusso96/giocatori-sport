@@ -52,15 +52,16 @@ public class ControlliNBA implements IBallers{
     public void modifica(int idDiChiModificare, String nuovoNominativo, String nuovaSquadra, int nuovaEta,
             int nuoviTitoliNba) {
         for (GiocatoriNBA gioc : draft) {
-            if (gioc.getId() == idDiChiModificare) {
-                gioc.setNominativo(nuovoNominativo);
+            if (gioc.getId() != idDiChiModificare) {
+            	System.out.println("Errore: il giocatore specificato non è stato trovato nella lista.");
+                
+
+            } else {
+            	gioc.setNominativo(nuovoNominativo);
                 gioc.setSquadra(nuovaSquadra);
                 gioc.setEta(nuovaEta);
                 gioc.setTitoliNba(nuoviTitoliNba);
                 System.out.println("Giocatore NBA aggiornato con successo.");
-
-            } else {
-                System.out.println("Errore: il giocatore specificato non è stato trovato nella lista.");
             }
         }
 

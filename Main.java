@@ -271,6 +271,7 @@ public class Main {
                     if (innId.equals("exit")) {
                         continue;
                     }
+                   
 
                     try {
                         modId = Integer.parseInt(innId);
@@ -638,6 +639,7 @@ public class Main {
                 
                 case "Q":
                     inserimentoAbilitato = false;
+                    System.out.println("Arrivederci!");
                     break;
 
             }
